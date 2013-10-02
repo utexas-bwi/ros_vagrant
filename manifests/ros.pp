@@ -17,6 +17,7 @@ node default {
         'vim': ensure => latest;
         'git': ensure => latest;
         'dpkg': ensure => latest;
+        'tmux': ensure => latest;
         'ros-hydro-desktop-full':
             ensure => latest,
             require => Apt::Ppa['http://packages.ros.org/ros/ubuntu'];
